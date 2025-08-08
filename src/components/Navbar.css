@@ -1,0 +1,43 @@
+.navwraper{
+    justify-content: center;
+    display: flex;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: #2FDD41;
+    color: black;
+    display: flex;
+    width: clamp(4rem, 55vw, 70rem);
+    height: clamp(1.7rem,5vw,5rem);
+    gap: clamp(1.7rem,1.7vw,3rem);
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    color: #990DCE;
+    font-family: 'Dela Gothic One', sans-serif;
+    white-space: nowrap;
+    font-size: clamp(1.7rem,1.7vw,3rem);
+}
+
+
+.navlinks{
+    font-family: 'Dela Gothic One', sans-serif;
+    display: flex;
+    color: black;
+    gap: clamp(1rem,1vw,3rem);
+    font-size: clamp(1rem,1vw,3rem);
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 600px){
+.navbar{
+    width: 20rem;
+}
+}
