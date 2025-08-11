@@ -48,8 +48,18 @@ html, body {
 .banner{
 max-width: 100%;
 height: auto;
-
+margin-top: 7rem;
 }
+
+.sobrenos{
+height: auto;
+max-width: none;
+overflow: hidden;
+position: absolute;
+margin-left: clamp(-70rem, -60rem, -20rem);
+margin-top: clamp(2rem, 10rem, 14rem);
+}
+
 .date-btn-wraper{
   display: flex;
   gap: clamp(1rem, 18vw, 40rem);
@@ -59,20 +69,20 @@ height: auto;
 .date{
   font-size: clamp(0.65rem, 1.4vw, 2rem);
   font-family: 'Dela Gothic One', sans-serif;
-  margin-top: clamp(0rem, 1vw, 2rem);
+  margin-top: clamp(0.6rem, 1vw, 2rem);
   white-space: nowrap;
   
 }
 
 .buybtn{
-  width: clamp(8rem, 20vw, 24rem);
-  height: clamp(1rem, 3vw, 4rem);
+  width: clamp(11rem, 20vw, 24rem);
+  height: clamp(1.5rem, 3vw, 4rem);
   background-color: #990DCE;
   color: white;
   border: none;
   border-radius: 0;
   cursor: pointer;
-  font-size: clamp(0.65rem, 1.4vw, 2rem);
+  font-size: clamp(.9rem, 1.4vw, 2rem);
   font-family: 'Dela Gothic One', sans-serif;
   white-space: nowrap;
 }
@@ -87,6 +97,7 @@ height: auto;
 
   .date{
    margin-left: -2rem;
+   
   }
 
   .date-btn-wraper{
@@ -96,8 +107,19 @@ height: auto;
 }
 
   .banner{
-    width: 110vw;
-    max-width: none;
-    margin-left: -3rem;
+  width: 110vw;
+  max-width: none;
+  margin-left: -3rem;
+  margin-top: 3.5rem;
   }
+
+  .sobrenos{
+width: 250vw;
+height: auto;
+max-width: none;
+overflow: hidden;
+position: absolute;
+margin-left: -22rem;
+margin-top: 4rem;
+}
 }

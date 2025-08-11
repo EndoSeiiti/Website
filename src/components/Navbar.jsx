@@ -3,23 +3,30 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar(){
-    const [isOpen, setIsOpen] = useState(false);
+    const [navOpen, setNavOpen] = useState(false);
 
-    const toggleMenu = () =>{setIsOpen(!isOpen);};
+    const toggleNav = () => {setNavOpen(!navOpen);};
 
     return(
         <div className='navwraper'>
-            <nav className='navbar'>
-                <div className='logo'>東京都</div>
-                <div className={`navlinks ${isOpen ? 'active' : ''}`}>
-                    <Link to = '/'>Inicio</Link>
-                    <Link to = '/lineup'>Atrações</Link>
-                    <Link to = '/tickets'>Ingressos</Link>
-                    <Link to = '/signin'>Cadastro</Link>
-                    <Link to = '/login'>Login</Link>
-                </div>
-                <div className="hamburger" onClick={toggleMenu}>☰</div>
+            <nav className={`navbar ${navOpen ? 'active' : ''}`}>
                 
+                <div className='logo'>東京都</div>
+
+                
+                    <div className="navlinks">
+                        <Link to='/'>Inicio</Link>
+                        <Link to='/lineup'>Atrações</Link>
+                        <Link to='/tickets'>Ingressos</Link>
+                        <Link to='/signin'>Cadastro</Link>
+                        <Link to='/login'>Login</Link>
+                    </div>
+                
+
+                
+                <div className="hamburger" onClick={toggleNav}>
+                    {navOpen ? '✖' : '☰'}
+                </div>
             </nav>
         </div>
     );
