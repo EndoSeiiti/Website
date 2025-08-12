@@ -21,10 +21,18 @@ function Home(){
                     <button className="buybtn" onClick={()=> navigate('/tickets')}>Compre o Ingresso </button>
                 </div>
                 <img src={Sobrenos} alt= "sobrenos" className='sobrenos'/>
-                <div className='aboutWraper'>
-                    <img src={Crowd} alt='crowd' className='crowd'/>
-                    <div className='abouttext'></div>
-                    <div className='logo2'></div>
+                
+                <div className="sobrenos-container">
+                <div className="texto-e-logo">
+                    <h2 className="titulo">Meltdown Fusion Tokyo</h2>
+                    <p className="descricao">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                    <div className="logo-roxa">東京都</div>
+                </div>
+                <div className="imagem-container">
+                    <img src={Crowd} alt="crowd" />
+                </div>
                 </div>
             </div> 
             

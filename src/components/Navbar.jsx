@@ -15,7 +15,7 @@ function Navbar(){
 
                 
                     <div className="navlinks">
-                        <Link to='/'>Inicio</Link>
+                        <Link to='/'>Início</Link>
                         <Link to='/lineup'>Atrações</Link>
                         <Link to='/tickets'>Ingressos</Link>
                         <Link to='/signin'>Cadastro</Link>
